@@ -15,8 +15,9 @@ const Header = () => {
             src="https://links.papareact.com/f90"
             width={150}
             height={40}
-            objectFit="contain"
+            // objectFit="contain"
             className="cursor-pointer"
+            alt=""
           />
         </div>
 

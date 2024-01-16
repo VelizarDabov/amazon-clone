@@ -1,9 +1,11 @@
+"use client";
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
-import ProductFeed from "@/components/ProductFeed";
+import ProductsFeed from "@/components/ProductsFeed";
 import Head from "next/head";
 
-export default function Home() {
+import ProductsData from "@/components/Products";
+export default function Home({ products }) {
   return (
     <div className="bg-gray-100 ">
       <Head>
@@ -15,7 +17,7 @@ export default function Home() {
         {/* banner */}
         <Banner />
         {/* product feed */}
-        <ProductFeed />
+        <ProductsFeed />
       </main>
     </div>
   );
