@@ -51,12 +51,14 @@ dispatch(removeFromBasket({productId}))
         </div>
 )}
         </div>
-        {/* right */}
+       
+
         <div className='flex flex-col space-y-2 my-auto'>
         <button className='button' onClick={addItemToBasket}>Add to Basket</button>
         <button className='button' onClick={remove}>Remove from Basket</button>
         </div>
-        
+         {/* right */}
+       
     </div>
   )
 }

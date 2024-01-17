@@ -1,12 +1,13 @@
 "use client";
 import Header from "@/components/Header";
-import { selectItems } from "@/slices/basketSlice";
+import { selectItems, selectTotal } from "@/slices/basketSlice";
 import Image from "next/image";
 import React from "react";
 import { useSelector } from "react-redux";
 import CheckoutProduct from "@/components/CheckoutProduct";
 const Checkhout = () => {
   const items = useSelector(selectItems);
+  const total = useSelector(selectTotal);
   return (
     <div className="bg-gray-100 ">
       <Header />
@@ -32,23 +33,29 @@ const Checkhout = () => {
                 productName={item.productName}
                 productPrice={item.productPrice}
                 productDescription={item.productDescription}
-                productImage = {item.productImage}
-                productMaterial = {item.productMaterial}
-                hasPrime = {item.hasPrime}
+                productImage={item.productImage}
+                productMaterial={item.productMaterial}
+                hasPrime={item.hasPrime}
               />
             ))}
           </div>
         </div>
         {/* right */}
+        <div className="flex flex-col bg-white p-10 shadow-md">
+          {selectItems.length > 0 && (
+            <>
+              <h2 className="whitespace-nowrap">
+                Subtotal ({items.length} items):{" "}
+                <span className="font-bold">${total.toFixed(2)}</span>
+              </h2>
+              {/* if you need authenticatio to proced the products  */}
+              <button className="button">Procide to checkout</button>
+            </>
+          )}
+        </div>
       </main>
     </div>
   );
 };
 
 export default Checkhout;
-// productId,
-// productName,
-// productPrice,
-// productDescription,
-// productImage,
-// productMaterial,
