@@ -5,7 +5,9 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
+import { useSession, signIn, signOut } from "next-auth/react"
 const Header = () => {
+
   return (
     <header>
       {/* left */}
@@ -33,7 +35,7 @@ const Header = () => {
         {/* right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
           {/* first */}
-          <div className="link">
+          <div className="link" onClick={signIn}>
             <p> Hello Velizar Dabov</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>

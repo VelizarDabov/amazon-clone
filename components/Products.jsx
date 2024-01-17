@@ -35,7 +35,7 @@ const Products = ({
       </div>
       {hasPrime&& ( 
         <div className="flex items-center space-x-2 -mt-5">
-<img className="w-12 h-12" src={prime} alt="" />
+<Image className="w-8 h-8" src={prime} alt="" />
 <p className="text-xs text-gray-500">Free Next-day Delivery</p>
           </div>
       )}
