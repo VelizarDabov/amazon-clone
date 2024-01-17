@@ -3,8 +3,6 @@ import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 import ProductsFeed from "@/components/ProductsFeed";
 import Head from "next/head";
-
-import ProductsData from "@/components/Products";
 export default function Home({ products }) {
   return (
     <div className="bg-gray-100 ">
