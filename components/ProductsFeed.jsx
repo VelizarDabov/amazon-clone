@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 import Products from "./Products";
-import add from "../assets/add.jpg";
+
 const ProductFeed = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
