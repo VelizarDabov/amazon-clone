@@ -5,7 +5,7 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
-import { useSession, signIn, signOut } from "next-auth/react";
+import {  signIn} from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 import { selectItems } from "@/slices/basketSlice";
@@ -22,7 +22,7 @@ const Header = () => {
             src="https://links.papareact.com/f90"
             width={150}
             height={40}
-            // objectFit="contain"
+      
             className="cursor-pointer"
             alt=""
           />

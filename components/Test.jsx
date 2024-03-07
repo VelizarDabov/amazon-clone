@@ -21,15 +21,15 @@ console.log(number)
        <div class="flex">
   <div class="flex-1">
  
-    Flex item 1
+    Product 1
     <div class="flex-0.4">
  
- Flex item 2
+ Product 2
 </div>
   </div>
   <div class="">
  
-    Flex item 2
+    Product 2
   </div>
 </div>
     </>
