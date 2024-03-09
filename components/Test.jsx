@@ -27,7 +27,7 @@ console.log(number)
  Product 2
 </div>
   </div>
-  <div class="">
+  <div class="flex-1">
  
     Product 2
   </div>
