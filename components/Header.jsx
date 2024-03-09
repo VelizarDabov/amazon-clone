@@ -35,7 +35,7 @@ const Header = () => {
             placeholder="Search"
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none"
           />
-          <SearchIcon className="h-12 p-4" />
+          <SearchIcon className="h-10 p-4" />
         </div>
         {/* right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
