@@ -12,7 +12,7 @@ const Checkhout = () => {
     <div className="bg-gray-100 ">
       <Header />
       <main className="lg:flex max-w-screen-2xl mx-auto">
-        {/* left */}
+      
         <div className="flex-grow m-5 shadow-sm">
           <Image
             src="https://links.papareact.com/ikj"
@@ -40,7 +40,7 @@ const Checkhout = () => {
             ))}
           </div>
         </div>
-        {/* right */}
+      
         <div className="flex flex-col bg-white p-10 shadow-md">
           {selectItems.length > 0 && (
             <>

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import ProductsFeed from "@/components/ProductsFeed";
 import Test from "@/components/Test";
 import Head from "next/head";
-export default function Home({ products }) {
+export default function Home() {
   return (
     <div className="bg-gray-100 ">
       <Head>
@@ -13,9 +13,9 @@ export default function Home({ products }) {
 
       <Header />
       <main className=" max-w-screen-2xl mx-auto">
-        {/* banner */}
+        
         <Banner />
-        {/* product feed */}
+     
         <ProductsFeed />
         <Test />
       </main>
